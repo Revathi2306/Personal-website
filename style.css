@@ -1,0 +1,323 @@
+body{
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+}
+h1, h2{
+    font-family:'Architects Daughter';
+    font-size: 90px;
+    padding-bottom: 3%;
+}
+.row, .container{
+    margin:auto;
+}
+/* navbar */
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 15px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 20px;
+      height: 5px;
+      border-top: 2px solid black;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #EFEFEF;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+/* .nav-bar{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+}
+  ul {
+      background: #fff;
+      display: table;
+      margin: auto;
+      padding: 10px;
+      width: 100%;
+  }
+  ul li {
+      list-style: none;
+      display: inline-block;
+      margin-left: 50px;
+  }
+  ul li a {
+      color: black;
+      text-decoration: none;
+      position: relative;
+      padding: 15px 10px;
+      padding-bottom: 10px;
+      font-size: 15px;
+      display: block;
+  }
+  ul li a::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: 0px;
+      width: 100%;
+      height: 4px;
+      background-color: #DCDCDC;
+      transform-origin: bottom right;
+      transition: transform 0.5s ease;
+      transform: scaleX(0);
+  }
+  ul a:hover::after {
+      transform-origin: bottom left;
+      transform: scaleX(1);
+  }
+  .navextradiv{
+      height: 66.333px;
+      width: 100%;
+  } */
+  /* title */
+.title{
+    background-color: #ffdacc;
+    background-image: url("images/Flowers_coner_blue__1_-removebg-preview.png"); 
+    background-position: right top;
+    background-repeat: no-repeat, repeat;
+    background-size: auto 100%;
+    padding-bottom: 18%;
+    text-align: right;
+}
+.name{
+    font-size: 100px;
+    font-weight: bolder;
+    margin: 0%;
+    padding-top: 12%;
+    margin-right: 20%;
+}
+.girl{
+    position:absolute;
+    width: 700px;
+    left: 0%;
+    top: 2%;
+}
+.col-sm-1{
+    align-items: center;
+    vertical-align: bottom;
+}
+
+.about{
+    background-color: #e7f3ff;
+    padding: 3% 25% 3% 25%;
+    position: relative;
+    z-index: 1;
+}
+div.about p{
+    font-size: 17px;
+    font-weight: thin;
+}
+.resume-btn, .card-link{
+    color: rgb(139, 111, 124);
+    font-size: 20px;
+    font-weight: 300;
+    width: 15%;
+    height: 3%;
+    background-color: #fff;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #ffdacc;
+    margin:auto;
+}
+.resume-btn:hover, .card-link:hover{
+    background-color: #fff7f5;
+    box-shadow: 1px 1px #fff1ec;
+    text-decoration: none;
+}
+.education{
+    padding: 3%;
+    padding-top: 5%;
+    background-color: #fff;
+}
+.education-heading, .card-title{
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 31.2px;
+    color: rgb(139, 111, 124);
+}
+.projects{
+    background-color: #e7f3ff;
+    padding: 5% 15% 7% 15%;
+}
+.project-card{
+    margin-top: 5%;
+}
+.card{
+    padding: 5%;
+    margin: auto;
+    border: rgb(139, 111, 124) solid 1px;
+}
+.card-text{
+    padding: 2%;
+}
+.photos{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+.pics{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.gallery-title{
+    padding-top: 2%;
+    padding-left: 12%;
+    text-align: left;
+}
+.gallery-down-img{
+    text-align: right;
+    padding: 3%;
+    padding-right: 7%;
+}
+footer{
+    background-color: #ffdacc;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(28, 28, 28, 0.69);
+    padding: 3%;
+}
+.contact-link{
+    height: 30px;
+    margin: 5px;
+}
+.contact-link:hover{
+   background: #fff1ec;
+}
+@media (max-width: 750px) {
+    #education img {
+        display:none;
+    }
+    .pics{
+        
+        height: 300px;
+    }
+    h1,h2{
+        font-size: 50px;
+    }
+    .education-heading, .card-title{
+        font-size: 16px;
+        line-height: 7px;
+    }
+    .resume-btn, .card-link{
+        font-size: 15px;
+        width: 10%;
+        height: 3%;
+    }
+}
+@media (max-width: 1395px){
+    .girl{
+        width: 500px;
+    }
+    .title{
+        padding-bottom: 5%;
+    }
+}
+@media (max-width: 1180px){
+    .girl{
+        width: 400px;
+    }
+    .title{
+        padding-bottom: 5%;
+        
+    }
+    .name{
+        font-size: 70px;
+    }
+}
+@media (max-width: 1180px){
+    .title{
+        padding-bottom: 5%;
+        
+    }
+    .name{
+        font-size: 70px;
+        margin-right: 25%;
+    }
+}
+@media (max-width: 930px){
+.girl{
+    display: none;
+}
+}
+@media (max-width: 580px){
+    .nav{
+        position: relative;
+    }
+}
